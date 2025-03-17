@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+
+    <div class="left">
+      <a href="/">Ruiling PU</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/lindapu-1" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/ruiling-pu-22850b288" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="lindapu@berkeley.edu">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      
+      <!-- Button to toggle theme -->
+      <button id="toggle-theme">Theme</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm <span class="highlight">Product Engineer</span> <br>Julia PU 👋</h2>
+
+        <p>I look forward to finding like-minded partners to explore the interactive gateways of the world together, focusing on technology, products, investment, and life while maintaining enthusiasm.</p>
+
+        <div class="links">
+          <a href="#education">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+          </a>
+          
+          <a href="#projects">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Projects</span>
+          </a>
+          
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/hero-headshot.webp" alt="Julia PU headshot">
+      </div>
+    </section>
+
+       <!-- SECTION 2: Education -->
+   <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="text">
+      <h3>University of California, Berkeley (UCB) | Exchange Student, Major in Computer Science | Jan 2025 - Jul 2025</h3>
+      <ul>
+        <li>Studied classic CS/AI courses, including CS61 series and CS194 (Advanced Large Language Model Agents)</li>
+        <li>Selected for CDSS internship program</li>
+      </ul>
+
+      <h3>The University of Hong Kong, School of Computer Science and Data Science (HKU-SCDS) | Major in Statistics, Minor in Computer Science (Graduating Class of 2025) | Sep 2021 - Jun 2025</h3>
+      <ul>
+        <li>Recipient of the HKU Outstanding Academic Scholarship (191,000 HKD per year)</li>
+        <li>Member of the Young Scientist Scheme (YSS); Dean's List member (Top 5% of the faculty)</li>
+        <li>Relevant courses: Algorithms and Data Structures (A), Machine Learning (A), Linear Regression (A), Computer Programming (A+), Multivariable Calculus and Linear Algebra (A), Probability and Statistics I (A-), Probability and Statistics II (A), Microeconomics (A), Corporate Finance (A)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Projects -->
+  <section id="projects" class="project-section">
+    <h2>Projects</h2>
+    <div class="project-row text">
+      <div class="col-sm-4">
+        <a href="https://github.com/lindapu-1/TargetControl">
+          <img src="images/research.png" class="figure-img img-fluid rounded img-project">
+        </a>
+      </div>
+      <div class="col-sm-8">
+        <h3>Controllable AI image generation</h3>
+        <p class="project-description">
+          Independently modified the source code of the Stable Diffusion generation model to achieve personalized user command responses.
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- SECTION 4: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        <h3>Programming Languages</h3>
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          You can contact me via email or LinkedIn!
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Add the script link at the end of the body -->
+  <script src="light.js"></script>
+</body>
+</html>
